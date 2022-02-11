@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import BlogList from "./BlogList";
 
+// Ezen a branchen az appnak az az állapota látható, amikor még csak megjelenítjük az adatokat. Mindenhol magyarázatokkal.
+// Későbbiekben custom hookká alakítom egy részét, majd CRUD elvek alapján építem
+
 const Home = () => {
     const [blogs, setBlogs] = useState(null);
 
