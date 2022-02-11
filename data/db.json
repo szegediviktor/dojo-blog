@@ -1,0 +1,24 @@
+{
+    "blogs": [
+        {
+            "title": "My new website",
+            "body": "lorem ipsum...",
+            "author": "Viktor",
+            "id": 1
+        },
+
+        {
+            "title": "Blablabla",
+            "body": "lorem ipsum...",
+            "author": "yoshi",
+            "id": 2
+        },
+
+        {
+            "title": "I've passed the React exam",
+            "body": "lorem ipsum...",
+            "author": "Viktor",
+            "id": 3
+        }
+    ]
+}
