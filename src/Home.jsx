@@ -8,20 +8,6 @@ const Home = () => {
 
     const [error, setError] = useState(null);
 
-    // Blog törlése röviden - Függvényátadással
-
-    // - A handleDelete a Bloglistben minden létrehozott blog-previewnél egy button onclick eventre fut le.
-    // - Itt argumentumban adom meg, majd ott propsból olvasom ki.
-    // - A fn kap egy id-t, amely mindig az adott blog-previewnél (mert oda kattintott a user) az adott blog.
-    // - Ezután deklarálunk egy változót, amelybe filterezzük azokat a blogokat, amelyeknek az id-ja nem egyenlő a kattintás helyének id-jával.
-    /* --[ Ez a filter method mindig egy új tömbbel tér vissza. Az eredetit nem módosítja. ]. -- */
-    // - A blogs setterFn-vel újraírom a blogs változóm tartalmát, amely így már egyenlő a filterezett blogokkal. Így csak az marad benne amelynek az id-ja nem egyenlő a kattintás helyének id-jával
-
-    // const handleDelete = (id) => {
-    //     const newBlogs = blogs.filter((blog) => blog.id !== id);
-    //     setBlogs(newBlogs);
-    // };
-
     useEffect(() => {
         fetch("http://localhost:8000/blogs")
             .then((res) => {
