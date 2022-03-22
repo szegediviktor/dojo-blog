@@ -24,10 +24,13 @@
 .navbar a {
     margin-left: 16px;
     text-decoration: none;
-    padding: 6px;
+    padding: 8px;
+    transition: all ease 500ms;
+    border-radius: 15px;
 }
 .navbar a:hover {
-    color: #4bd820;
+    color: white;
+    background-color: #268010;
 }
 .content {
     max-width: 600px;
